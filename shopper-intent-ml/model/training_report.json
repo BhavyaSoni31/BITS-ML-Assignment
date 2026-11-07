@@ -1,0 +1,84 @@
+{
+  "dataset": "UCI Online Shoppers Purchasing Intention (id 468)",
+  "rows_after_dedup": 12205,
+  "train_rows": 9764,
+  "holdout_rows": 2441,
+  "positive_rate": 0.1563,
+  "split_seed": 2611,
+  "cv_folds": 5,
+  "selection_metric": "MCC",
+  "class_names": [
+    "No Purchase",
+    "Purchase"
+  ],
+  "raw_features": [
+    "Administrative",
+    "Informational",
+    "ProductRelated",
+    "Administrative_Duration",
+    "Informational_Duration",
+    "ProductRelated_Duration",
+    "BounceRates",
+    "ExitRates",
+    "PageValues",
+    "SpecialDay",
+    "Month",
+    "OperatingSystems",
+    "Browser",
+    "Region",
+    "TrafficType",
+    "VisitorType",
+    "Weekend"
+  ],
+  "target": "Revenue",
+  "models": {
+    "logistic_regression": {
+      "display_name": "Logistic Regression",
+      "best_params": {
+        "C": 0.003,
+        "class_weight": "balanced"
+      },
+      "cv_mcc": 0.5969654247437173,
+      "fit_seconds": 39.5
+    },
+    "decision_tree": {
+      "display_name": "Decision Tree",
+      "best_params": {
+        "class_weight": null,
+        "criterion": "gini",
+        "max_depth": 7,
+        "min_samples_leaf": 60
+      },
+      "cv_mcc": 0.5938101970389332,
+      "fit_seconds": 121.1
+    },
+    "knn": {
+      "display_name": "KNN",
+      "best_params": {
+        "n_neighbors": 75,
+        "p": 2,
+        "weights": "distance"
+      },
+      "cv_mcc": 0.59030673611142,
+      "fit_seconds": 38.7
+    },
+    "naive_bayes": {
+      "display_name": "Naive Bayes",
+      "best_params": {
+        "var_smoothing": 1.0
+      },
+      "cv_mcc": 0.5607886962397777,
+      "fit_seconds": 14.6
+    },
+    "svm": {
+      "display_name": "Support Vector Machine",
+      "best_params": {
+        "C": 1.0,
+        "class_weight": null,
+        "gamma": "scale"
+      },
+      "cv_mcc": 0.6142313297337295,
+      "fit_seconds": 156.8
+    }
+  }
+}
