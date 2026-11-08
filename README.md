@@ -50,7 +50,7 @@ that scores an uploaded test CSV with the saved models. The app never re-trains 
 
 **Repository:** `https://github.com/BhavyaSoni31/BITS-ML-Assignment/`
 
-**Live Streamlit app:** `https://bits-ml-assignment-xveczw9kkgjpvud6y5n9zw.streamlit.app/`
+**Live Streamlit app:** `https://bits-ml-assignment-mgh8ntayb9ftq3prlrwahq.streamlit.app/`
 
 ```
 BITS-ML-Assignment/
